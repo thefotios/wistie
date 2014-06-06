@@ -16,3 +16,13 @@ module.exports = function(line) {
 	return "--Some Prepend-- "+line+"\n";
 }
 ```
+
+The result
+
+```
+--Some Prepend-- [2014-06-05 23:09:33.606] [INFO] app - mode:development
+
+--Some Prepend-- [2014-06-05 23:09:33.608] [WARN] app - Missing SSL config files. (Error: ENOENT, no such file or directory '/dev/site/sslcert/server.key')
+
+--Some Prepend-- [2014-06-05 23:09:33.620] [INFO] app - Express HTTP server listening on port 8080
+```
