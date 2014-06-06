@@ -1,6 +1,6 @@
 {
   "name": "wistie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prepend stdout with a given string",
   "main": "bin/wistie",
   "bin": {
