@@ -1,0 +1,23 @@
+{
+  "name": "wistie",
+  "version": "1.0.0",
+  "description": "Prepend stdout with a given string",
+  "main": "bin/wistie",
+  "bin": {
+    "wistie": "./bin/wistie"
+  },
+  "repository": "git://github.com/
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name" : "Baz O'Mahony",
+    "email" : "the.ewok@gmail.com",
+    "url" : "http://www.theewok.me"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "through": "2.3.4",
+    "split": "0.3.0"
+  }
+}

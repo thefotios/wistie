@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var wistie = require('../lib/wistie');
+var cwd = process.cwd();
+var hostname = require('os').hostname();
+
+//Default formatter
+function wistie_formatter(line) {
+   return "\033[91m["+hostname+"]\033[0m "+line+"\n"; 
+}
+
+//Choose formatter
+if(fs.existsSync(cwd+"/wistie_formatter.js")) {
+    wistie(require(cwd+"/wistie_formatter"));
+} else {
+    wistie(wistie_formatter);
+}
+
+
+
+
