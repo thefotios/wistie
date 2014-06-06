@@ -6,18 +6,26 @@
   "bin": {
     "wistie": "./bin/wistie"
   },
-  "repository": "git://github.com/
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheEwok/wistie.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name" : "Baz O'Mahony",
-    "email" : "the.ewok@gmail.com",
-    "url" : "http://www.theewok.me"
+    "name": "Baz O'Mahony",
+    "email": "the.ewok@gmail.com",
+    "url": "http://www.theewok.me"
   },
   "license": "BSD-3-Clause",
   "dependencies": {
     "through": "2.3.4",
     "split": "0.3.0"
+  },
+  "devDependencies": {
+    "mock-utf8-stream": "0.1.1",
+    "chai": "1.9.1",
+    "mocha": "1.20.1"
   }
 }

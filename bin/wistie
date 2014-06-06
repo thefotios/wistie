@@ -16,7 +16,3 @@ if(fs.existsSync(cwd+"/wistie_formatter.js")) {
 } else {
     wistie(wistie_formatter);
 }
-
-
-
-
