@@ -11,8 +11,7 @@ function wistie_formatter(line) {
 }
 
 //Choose formatter
-if(fs.existsSync(cwd+"/wistie_formatter.js")) {
-    wistie(require(cwd+"/wistie_formatter"));
-} else {
-    wistie(wistie_formatter);
-}
+fs.exists(cwd+"/wistie_formatter.js", function(exists){
+   var formatter = exists ? require(cwd+"/wistie_formatter") : wistie_formatter;
+   wistie(formatter);
+});
